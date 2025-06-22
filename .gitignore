@@ -1,0 +1,89 @@
+# Config
+.env.development
+.env.production
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Python packaging
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+poetry.lock
+
+# Log, backup and temporary files
+*.log
+*.tmp
+*.bak
+
+# Testing and coverage
+.cache/
+.tox/
+.coverage
+coverage.xml
+htmlcov/
+.mypy_cache/
+.pytest_cache/
+.pyre/
+.dmypy.json
+
+# Virtual environments
+.env
+.venv
+venv/
+ENV/
+env/
+*.env
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+/client/.angular
+/client/node_modules
+npm-debug.log
+yarn-error.log
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+media
+site
+
+# IDE/editor configurations
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+*.sw?
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+
+# OS-specific files
+.DS_Store
+Thumbs.db

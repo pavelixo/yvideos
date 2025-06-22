@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}YVideos{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    {% block head %}{% endblock %}
+</head>
+<body class="bg-gray-900 text-white ">
+    <header class="bg-gray-950 px-6 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">
+            <a href="{% url 'video-list' %}" class="hover:text-orange-500 transition-colors duration-300">
+                YVideos
+            </a>
+        </h1>
+        <nav>
+            <a href="{% url 'video-create' %}" 
+               class="text-white bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded-md font-semibold transition-colors duration-300">
+                Criar Vídeo
+            </a>
+        </nav>
+    </header>
+
+    <main class="p-6">
+        {% block main %}
+        {% endblock %}
+    </main>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>
